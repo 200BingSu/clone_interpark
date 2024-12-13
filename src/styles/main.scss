@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+  min-height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 30px;
+  .slide {
+    height: 350px;
+    width: 100%;
+    background-color: skyblue;
+    margin-bottom: 60px;
+  }
+  .content-wrap {
+    width: 100%;
+    height: 590px;
+    background-color: mediumaquamarine;
+    margin-bottom: 95px;
+  }
+}

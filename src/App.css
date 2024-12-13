@@ -1,0 +1,9 @@
+.wrap {
+  position: relative;
+}
+.wrap .inner {
+  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 1280px;
+}

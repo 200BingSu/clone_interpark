@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  position: relative;
+}
+.wrap .inner {
+  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 1280px;
+}
+
+.header {
+  position: relative;
+  height: 160px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main {
+  position: relative;
+  min-height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 30px;
+}
+.main .slide {
+  height: 350px;
+  width: 100%;
+  background-color: skyblue;
+  margin-bottom: 60px;
+}
+.main .content-wrap {
+  width: 100%;
+  height: 590px;
+  background-color: mediumaquamarine;
+  margin-bottom: 95px;
+}
+
+.footer {
+  position: relative;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.footer .footer-menu {
+  height: 50px;
+  background-color: pink;
+}
+.footer .footer-service {
+  height: 180px;
+  background-color: yellowgreen;
+}
+.footer .footer-copy {
+  height: 120px;
+  border-color: bisque;
+}/*# sourceMappingURL=main.css.map */
