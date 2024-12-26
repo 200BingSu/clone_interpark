@@ -1,7 +1,11 @@
 const ContentWrap = ({
-  props
+  title,
+  titleImage,
+  subtitle,
+  btText,
+  btLink,
+  children,
 }) => {
-  const{...}=props;
   return (
     <div className="content-wrap">
       <h2>{titleImage ? <img src={titleImage} /> : title}</h2>
