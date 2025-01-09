@@ -3,27 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- slide.js -->
+    <script src="js/slide.js"></script>
+    <title>인터파크 클론 프로젝트</title>
     <link rel="stylesheet" href="css/main.css" />
-    <title>(www)Interpark_clone 프로젝트</title>
   </head>
   <body>
     <div class="wrap">
       <!-- 상단 -->
       <header class="header">
         <div class="inner">
+          <!-- 모바일용 헤더 -->
+          <div class="mb-header-main">
+            <!-- 모바일 로고 -->
+            <a href="#" class="mb-header-logo">
+              <img src="images/icon/bi.svg" />
+            </a>
+            <!-- 모바일 메뉴 -->
+            <ul class="mb-header-main-menu">
+              <li><a href="#" class="home">홈</a></li>
+              <li><a href="#">투어</a></li>
+              <li><a href="#">티켓</a></li>
+            </ul>
+            <!-- 모바일 회원메뉴 -->
+            <ul class="mb-header-main-member">
+              <li>
+                <a href="#">
+                  <img src="images/icon/icon_search.svg" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon/icon_mypage.svg" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <div class="header-top">
             <div class="header-logo-search">
-              <a href="/" class="logo">
-                <img src="images/ci.svg" alt="로고" />
+              <a href="/" alt="인터파크">
+                <img src="images/ci.svg" />
               </a>
               <div class="search">
                 <label class="search-ad">
                   해외항공, 최저가 아니면 200% 보상
                 </label>
                 <input type="text" />
-                <button type="button">🔍</button>
+                <button>검색</button>
               </div>
             </div>
+
             <div class="member-menu">
               <a href="#">로그인</a>
               <a href="#">회원가입</a>
@@ -36,14 +71,14 @@
               <a href="#">티켓</a>
             </nav>
             <div class="more-gnb">
-              <span class="line">|</span>
+              <span class="line">구분선</span>
               <a href="#">
-                200% 보상
-                <img src="images/icon/icon-hot.png" alt="" />
+                200%보상
+                <img src="images/icon/icon-hot.png" />
               </a>
-              <a href="#">여행 캘린더</a>
-              <a href="#">여행 혜택존</a>
-              <a href="#">여행 준비</a>
+              <a href="#">여행캘린더</a>
+              <a href="#">여행혜택존</a>
+              <a href="#">여행준비</a>
             </div>
           </div>
         </div>
@@ -51,38 +86,122 @@
       <!-- 메인 -->
       <main class="main">
         <div class="inner">
-          <div class="slide"></div>
+          <div class="slide">
+            <!-- Swiper -->
+            <div class="swiper visual-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img src="images/slide-img/slide-0.png" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/slide-img/slide-1.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/slide-img/slide-2.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/slide-img/slide-0.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/slide-img/slide-1.png" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/slide-img/slide-2.png" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
           <div class="content-wrap">
-            <h2>투어 특가</h2>
+            <h2>투어특가</h2>
             <p>여행전...</p>
             <div class="content-cate"></div>
-            <div class="content-slide"></div>
-            <div class="content-link"><a href=""></a></div>
+            <div class="content-slide-wrap">
+              <!-- Swiper -->
+              <div class="swiper tour-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"><img src="images/slide-img/slide-0.png" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/slide-img/slide-1.png" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/slide-img/slide-2.png" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/slide-img/slide-0.png" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/slide-img/slide-1.png" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/slide-img/slide-2.png" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="content-link"><a href="#"></a></div>
           </div>
+
           <div class="content-wrap">
-            <h2>W 트립</h2>
+            <h2>W트립</h2>
             <p>누구와...</p>
             <div class="content-slide"></div>
-            <div class="content-link"><a href=""></a></div>
+            <div class="content-link"><a href="#"></a></div>
           </div>
+
           <div class="content-wrap">
-            <h2>티켓 랭킹</h2>
-            <p>오늘...</p>
+            <h2>티켓링크</h2>
+            <p>오늘은...</p>
             <div class="content-cate"></div>
             <div class="content-slide"></div>
-            <div class="content-link"><a href=""></a></div>
+            <div class="content-link"><a href="#"></a></div>
           </div>
+
           <div class="content-wrap">
-            <h2>인터파크 Live</h2>
+            <h2>인터파크Live</h2>
             <p></p>
             <div class="content-slide"></div>
-            <div class="content-link"><a href=""></a></div>
+            <div class="content-link"><a href="#"></a></div>
           </div>
         </div>
       </main>
       <!-- 하단 -->
       <footer class="footer">
-        <div class="footer-menu"></div>
+        <div class="footer-menu">
+          <div class="inner"></div>
+        </div>
         <div class="footer-service">
           <div class="inner"></div>
         </div>
